@@ -13,8 +13,8 @@ stock_api_key = os.getenv("STOCK_API_KEY")
 news_api_key = os.getenv("NEWS_API_KEY")
 
 today_date = datetime.datetime.now().date()
-yesterday_date = today_date - datetime.timedelta(days=1)
-day_before_yesterday = today_date - datetime.timedelta(days=2)
+yesterday_date = today_date - datetime.timedelta(days=2)
+day_before_yesterday = today_date - datetime.timedelta(days=3)
 
 stock_parameters = {
     "function": "TIME_SERIES_DAILY",
